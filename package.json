@@ -1,0 +1,10 @@
+{
+  "name": "@types/minarai",
+  "version": "0.0.1",
+  "description": "This package contains type definitions for minarai",
+  "main": "",
+  "scripts": {},
+  "author": "",
+  "license": "MIT",
+  "types": "index.d.ts"
+}
