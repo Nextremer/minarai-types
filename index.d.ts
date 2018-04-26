@@ -3,8 +3,6 @@
 // Definitions by: Naoki Sawada <https://github.com/naoki-sawada>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
-export as namespace minarai;
-
 declare namespace minarai {
   // アプリケーションサーバの`/authenticate`リクエストの要求
   interface IPartnerAuthenticateRequest {
