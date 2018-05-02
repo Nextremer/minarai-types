@@ -59,7 +59,18 @@ declare namespace minarai {
   export interface IEngineQueryResponse {
     engineType: string;
     engineName: string;
-    body: any;
+    isDefault: boolean;
+    score: number;
+    body: {
+      entities: [{
+        type: string;
+        value: string;
+      }];
+      intent: string;
+      text: string;
+      extra: any;
+    };
+    raw: any;
   }
 
   export interface IPartnerPostSelectorResponseBody {
