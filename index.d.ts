@@ -47,6 +47,7 @@ declare namespace minarai {
       clientId: number | string;
       deviceId: any;
       callBackUri: string;
+      applicationId?: string;
     };
     body: {
       userUtterance: string;
