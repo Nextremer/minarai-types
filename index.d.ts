@@ -81,31 +81,31 @@ declare namespace minarai {
       requestId: string,
     },
     body: {
-      "messages": [{
-        "layout": string,
-        "titleText": string,
-        "utterances": [{
-          "actor": string,
-          "text": string,
-          "?extra": {
+      messages: [{
+        layout: string,
+        titleText: string,
+        utterances: [{
+          actor: string,
+          text: string,
+          extra?: {
           },
         }],
-        "?buttons": [{
-          "presentation": {
+        buttons?: [{
+          presentation: {
             type: string,
             detail: undefined,
           },
-          "action": {
+          action: {
             type: string,
             detail: undefined,
           },
-          "?extra": {
+          extra?: {
           },
         }],
-        "?extra": {
+        extra?: {
         },
       }],
-      "?extra": {
+      extra?: {
       },
     },
   }
