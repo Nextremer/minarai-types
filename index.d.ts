@@ -74,6 +74,16 @@ declare namespace minarai {
     raw: any;
   }
 
+  export interface IPartnerPostSelectorResponseBody {
+    messages: Array<{
+      value: string;
+      uiCommand?: any;
+      extra?: any;
+    }>;
+    extra?: any;
+    type?: string;
+  }
+
   export interface IPartnerPostSelectorResponse {
     head: {
       engineType: string,
