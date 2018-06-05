@@ -75,49 +75,37 @@ declare namespace minarai {
   }
 
   export interface IPartnerPostSelectorResponseBody {
-    messages: Array<{
-      value: string;
-      uiCommand?: any;
-      extra?: any;
-    }>;
-    extra?: any;
-    type?: string;
+    messages: [{
+      layout: string;
+      titleText: string;
+      utterances: [{
+        actor: string;
+        text: string;
+        extra?: {};
+      }],
+      buttons?: [{
+        presentation: {
+          type: string;
+          detail: undefined;
+        }
+        action: {
+          type: string;
+          detail: undefined;
+        }
+        extra?: {};
+      }]
+      extra?: {};
+    }];
+    extra?: {};
   }
 
   export interface IPartnerPostSelectorResponse {
     head: {
-      engineType: string,
-      engineName: string,
-      requestId: string,
-    },
-    body: {
-      messages: [{
-        layout: string,
-        titleText: string,
-        utterances: [{
-          actor: string,
-          text: string,
-          extra?: {
-          },
-        }],
-        buttons?: [{
-          presentation: {
-            type: string,
-            detail: undefined,
-          },
-          action: {
-            type: string,
-            detail: undefined,
-          },
-          extra?: {
-          },
-        }],
-        extra?: {
-        },
-      }],
-      extra?: {
-      },
-    },
+      engineType: string;
+      engineName: string;
+      requestId: string;
+    };
+    body: IPartnerPostSelectorResponseBody[];
   }
 
   // アプリケーションサーバに`leave`リクエストする際のパラメーター
