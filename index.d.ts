@@ -105,7 +105,7 @@ declare namespace minarai {
       engineName: string;
       requestId: string;
     };
-    body: IPartnerPostSelectorResponseBody[];
+    body: IPartnerPostSelectorResponseBody;
   }
 
   // アプリケーションサーバに`leave`リクエストする際のパラメーター
