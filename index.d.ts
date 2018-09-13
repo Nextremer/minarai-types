@@ -81,6 +81,7 @@ declare namespace minarai {
       utterances: [{
         actor: string;
         text: string;
+        expression: null | string;
         extra?: {};
       }],
       buttons?: [{
